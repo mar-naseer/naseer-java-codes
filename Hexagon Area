@@ -1,0 +1,45 @@
+Write a Java program to compute hexagon area.
+
+Test Data:
+Input the length of a side of the hexagon: 6
+
+Sample Output:
+
+Input the length of a side of the hexagon: 6                                                                  
+The area of the hexagon is: 93.53074360871938
+
+Java Code:
+
+import java.util.Scanner;
+
+public class Exercise34 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        // Prompt the user to input the length of a side of the hexagon
+        System.out.print("Input the length of a side of the hexagon: ");
+        
+        // Read the length of a side from the user
+        double s = input.nextDouble();
+        
+        // Calculate and display the area of the hexagon
+        System.out.print("The area of the hexagon is: " + hexagonArea(s) + "\n");
+    }
+
+    public static double hexagonArea(double s) {
+        // Calculate the area of a hexagon based on its side length
+        return (6 * (s * s)) / (4 * Math.tan(Math.PI / 6));
+    }
+}
+
+Explanation:
+
+In the exercise above -
+
+First it uses the "Scanner" class to obtain input from the user.
+It prompts the user to input the length of a side of the hexagon using System.out.print("Input the length of a side of the hexagon: ") and reads the input into the variable 's'.
+It then calls a separate method named "hexagonArea()" and passes the input length s as an argument.
+Inside the "hexagonArea()" method:
+It calculates the area of the hexagon using the formula (6 s^2) / (4 tan(π/6)), where s is the length of a side and tan(π/6) represents the tangent of 30 degrees (π/6 radians), which is a constant value.
+It returns the calculated area as a double.
+Finally, back in the "main()" method, it prints the result of the "hexagonArea()" method, displaying the area of the hexagon based on the user-provided side length.
