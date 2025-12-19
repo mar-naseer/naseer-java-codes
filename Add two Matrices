@@ -4,7 +4,6 @@ public class Geeks {
 
     public static void main(String[] args) 
     {
-        // Input matrices
         int A[][] = { { 1, 2 }, { 3, 4 } };
         int B[][] = { { 1, 1 }, { 1, 1 } };
 
