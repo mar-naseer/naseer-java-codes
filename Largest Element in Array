@@ -1,4 +1,4 @@
-Java Program to Find the Largest Element in Array
+Java Program to Find the Largest Element in Array:
 
 public class LargestElement {
     public static int findLargest(int[] arr) {
@@ -15,7 +15,6 @@ public class LargestElement {
         }
         return maxElement;
     }
-
     public static void main(String[] args) {
         int[] numbers = {10, 5, 20, 8, 15};
         int largest = findLargest(numbers);
