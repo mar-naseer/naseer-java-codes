@@ -3,7 +3,7 @@ Write a Java program that takes a number as input and prints its multiplication 
 Test Data:
 Input a number: 8
 
-Sample Output:
+Sample Output:-
 
 Input a number: 8                                                                                             
 8 x 1 = 8                                                                                                     
